@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 140px;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom,
+    #FFA76A,   
+    #B573D1,   
+    #8662c4,  
+    #1A1A50   
+  );
+   font-family: 'Poppins', sans-serif;
+   color: whitesmoke;
+   text-align: justify;
+
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 0px;
+    margin: -100px 0px 0px 0px;
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar {
+    width: 100%;
+}
+
+#texto-lamas {
+  flex: 1 1 45%;
+  margin-left: 50px;
+}
+
+#foto-lamas {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto-lamas img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.coluna-texto h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    }
+
+.secao-principal {
+     max-width: 1440px;
+     width: 100%;
+     margin: 100px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 16px;
+     gap: 32px; 
+     flex-wrap: wrap; 
+}
+
+.imagem-coluna,
+.imagem-coluna2 {
+    flex: 1 1 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+} 
+.margem-lateral {
+      flex: 0 0 165px;
+      height: auto;
+}
+
+
+.imagem-coluna2 img {
+    max-width: 70%;
+    min-width: 210px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.corte-biografia {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+}
+
+.coluna-biografia {
+    flex: 0 0 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.coluna-biografia h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+.coluna-biografia p {
+    list-style-type: none;
+    padding-left: 20px;
+    width: 75%;
+    margin: 0px;
+    padding: 0px;
+}
+.curiosidades {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 100px;  
+}
+
+.curiosidades > div {
+    width: 30%;
+    background-color: #f0f0f0; 
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#curiosidade1 {
+    margin-left: 20px;
+}
+
+.descricao-livro {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.cards-livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+.card-livro {
+    flex: 1 1 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-livro:hover {
+    transform: translateY(-10px);
+}
+
+
+.card-curiosidade {
+    background-color: #B573D1;
+    transition: transform 0.3s ease;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.card-curiosidade:hover {
+    transform: translateY(-10px);
+    
+}
+
+.card-conteudo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-conteudo p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #B573D1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#bttn-contato {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+#bttn-contato:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-download:hover {
+    background-color: #8662c4;
+}
+
+.btn-custom {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.secao-duvidas {
+    margin: 100px 0;
+    color: white;
+}
+
+.subtitulo-duvidas {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.lista-duvidas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.duvida-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.duvida-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.duvida-item p {
+    line-height: 1.6;
+}
+
+.citacao-final {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.texto-citacao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.citacao-texto {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold
+}
+
+.citacao-autor {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-container {
+    background-color: #1A1A50;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    align-items: center; 
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-logo img {
+    vertical-align: middle; 
+    display: inline-block; 
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1055;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-overlay.active {
+    opacity: 1;
+}
+
+.custom-popup {
+    background-color: #42a54f;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#link-instagram {
+    color: white;
+
+}
+
+#link-amazon {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}

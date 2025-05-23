@@ -17,3 +17,24 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  
+document.addEventListener("DOMContentLoaded", function () {
+  const botoes = document.querySelectorAll('[data-bs-toggle="collapse"]');
+
+  botoes.forEach(botao => {
+    const alvoID = botao.getAttribute("data-bs-target");
+    const alvo = document.querySelector(alvoID);
+    const seta = botao.querySelector(".seta");
+
+    // seta abre
+    alvo.addEventListener('show.bs.collapse', () => {
+      seta.textContent = "🔽";
+    });
+
+    // seta fecha
+    alvo.addEventListener('hide.bs.collapse', () => {
+      seta.textContent = "▶";
+    });
+  });
+});

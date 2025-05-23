@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // seta abre
     alvo.addEventListener('show.bs.collapse', () => {
-      seta.textContent = "🔽";
+      seta.textContent = "▼";
     });
 
     // seta fecha

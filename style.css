@@ -249,7 +249,7 @@ header {
 .duvida-item .collapse {
     margin-left: 1%; /* Deslocamento para direita */
     padding-right: 1rem;
-    border-left: 2px solid rgb(108, 172, 214);; /* Linha decorativa opcional */
+    border-left: 2px solid rgb(255, 255, 255);; /* Linha decorativa opcional */
     padding-left: 1.5rem;
 }
 

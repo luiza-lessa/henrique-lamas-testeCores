@@ -351,6 +351,7 @@ header {
 
 .btn-download:hover {
     background-color: var(--color-secondary);
+    color: #ffffff
 }
 
 #bttn-contato {
